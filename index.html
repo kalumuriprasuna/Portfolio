@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sai Prasuna | Portfolio</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #0f172a, #020617);
+  color: white;
+}
+
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: rgba(0,0,0,0.6);
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #facc15;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #38bdf8;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.hero p {
+  margin-top: 10px;
+  color: #94a3b8;
+}
+
+/* SECTION */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+/* ABOUT */
+.about p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 15px;
+  background: #1e293b;
+  border-radius: 20px;
+}
+
+/* PROJECTS */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #1e293b;
+  margin: 15px;
+  padding: 20px;
+  width: 320px;
+  border-radius: 15px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #334155;
+}
+
+.card h3 {
+  color: #facc15;
+}
+
+.card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+/* CONTACT */
+.contact a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  margin-top: 40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <h2>Sai Prasuna</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO WITH PHOTO -->
+<section class="hero">
+  <img src="Myimage.jpg" alt="Sai Prasuna">
+  <h1>Hello, I'm <span>Sai Prasuna</span></h1>
+  <p>Full Stack Developer | CSE Student | Cloud Enthusiast</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>
+    I am a Computer Science undergraduate with a strong interest in web development and cloud computing.
+    I enjoy building real-world applications that solve practical problems and improve user experience.
+    I am passionate about learning new technologies and continuously improving my development skills.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Java</span>
+    <span>Python</span>
+    <span>JavaScript</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>Firebase</span>
+    <span>MySQL</span>
+    <span>AWS</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>CITA 2K26</h3>
+      <ul>
+        <li>Developed a web-based event management system for a college fest</li>
+        <li>Implemented event listing and registration functionality</li>
+        <li>Designed a responsive and user-friendly interface</li>
+        <li>Simulated admin features for managing event data</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Farmer Buddy</h3>
+      <ul>
+        <li>Built a platform connecting farmers directly with customers</li>
+        <li>Enabled multilingual support for better accessibility</li>
+        <li>Implemented price negotiation feature for users</li>
+        <li>Used Firebase for real-time data handling</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Karshak Mitra</h3>
+      <ul>
+        <li>Developed a crop advisory system for farmers</li>
+        <li>Provided data-driven crop and profit recommendations</li>
+        <li>Integrated daily market trend analysis</li>
+        <li>Designed an easy-to-use interface for farmers</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Email: kalumurisaiprasuna@gmail.com</p>
+  <p>
+    <a href="https://github.com/kalumuriprasuna" target="_blank">GitHub</a> |
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Sai Prasuna</p>
+</footer>
+
+<script>
+// Smooth scrolling
+document.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", function(e) {
+    if (this.hash !== "") {
+      e.preventDefault();
+      document.querySelector(this.hash).scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
