@@ -1,256 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sai Prasuna | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+    <title>K. Sai Prasuna | Software Developer</title>
 
-body {
-  background: linear-gradient(to right, #0f172a, #020617);
-  color: white;
-}
+    <meta name="description"
+          content="Portfolio of K. Sai Prasuna - Computer Science Engineering student and aspiring Software Developer.">
 
-/* NAVBAR */
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 50px;
-  background: rgba(0,0,0,0.6);
-  position: sticky;
-  top: 0;
-}
-
-nav a {
-  margin: 0 15px;
-  color: #38bdf8;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #facc15;
-}
-
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.hero img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  border: 3px solid #38bdf8;
-}
-
-.hero h1 {
-  font-size: 40px;
-}
-
-.hero span {
-  color: #38bdf8;
-}
-
-.hero p {
-  margin-top: 10px;
-  color: #94a3b8;
-}
-
-/* SECTION */
-section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-h2 {
-  margin-bottom: 20px;
-  color: #38bdf8;
-}
-
-/* ABOUT */
-.about p {
-  max-width: 700px;
-  margin: auto;
-  line-height: 1.6;
-}
-
-/* SKILLS */
-.skills span {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 15px;
-  background: #1e293b;
-  border-radius: 20px;
-}
-
-/* PROJECTS */
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card {
-  background: #1e293b;
-  margin: 15px;
-  padding: 20px;
-  width: 320px;
-  border-radius: 15px;
-  text-align: left;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  background: #334155;
-}
-
-.card h3 {
-  color: #facc15;
-}
-
-.card ul {
-  margin-top: 10px;
-  padding-left: 20px;
-}
-
-/* CONTACT */
-.contact a {
-  color: #38bdf8;
-  text-decoration: none;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #020617;
-  margin-top: 40px;
-}
-</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header>
-  <h2>Sai Prasuna</h2>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+    <!-- ================= NAVBAR ================= -->
 
-<!-- HERO WITH PHOTO -->
-<section class="hero">
-  <img src="Myimage.jpg" alt="Sai Prasuna">
-  <h1>Hello, I'm <span>Sai Prasuna</span></h1>
-  <p>Full Stack Developer | CSE Student | Cloud Enthusiast</p>
-</section>
+    <header>
+        <div class="navbar">
 
-<!-- ABOUT -->
-<section id="about" class="about">
-  <h2>About Me</h2>
-  <p>
-    I am a Computer Science undergraduate with a strong interest in web development and cloud computing.
-    I enjoy building real-world applications that solve practical problems and improve user experience.
-    I am passionate about learning new technologies and continuously improving my development skills.
-  </p>
-</section>
+            <div class="logo">
+                Sai Prasuna
+            </div>
 
-<!-- SKILLS -->
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>Java</span>
-    <span>Python</span>
-    <span>JavaScript</span>
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>Firebase</span>
-    <span>MySQL</span>
-    <span>AWS</span>
-  </div>
-</section>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="projects">
+        </div>
+    </header>
 
-    <div class="card">
-      <h3>CITA 2K26</h3>
-      <ul>
-        <li>Developed a web-based event management system for a college fest</li>
-        <li>Implemented event listing and registration functionality</li>
-        <li>Designed a responsive and user-friendly interface</li>
-        <li>Simulated admin features for managing event data</li>
-      </ul>
-    </div>
 
-    <div class="card">
-      <h3>Farmer Buddy</h3>
-      <ul>
-        <li>Built a platform connecting farmers directly with customers</li>
-        <li>Enabled multilingual support for better accessibility</li>
-        <li>Implemented price negotiation feature for users</li>
-        <li>Used Firebase for real-time data handling</li>
-      </ul>
-    </div>
+    <!-- ================= HERO ================= -->
 
-    <div class="card">
-      <h3>Karshak Mitra</h3>
-      <ul>
-        <li>Developed a crop advisory system for farmers</li>
-        <li>Provided data-driven crop and profit recommendations</li>
-        <li>Integrated daily market trend analysis</li>
-        <li>Designed an easy-to-use interface for farmers</li>
-      </ul>
-    </div>
+    <section class="hero">
 
-  </div>
-</section>
+        <div class="hero-content">
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <h2>Contact</h2>
-  <p>Email: kalumurisaiprasuna@gmail.com</p>
-  <p>
-    <a href="https://github.com/kalumuriprasuna" target="_blank">GitHub</a> |
-    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-  </p>
-</section>
+            <img src="Myimage.jpg"
+                 alt="K. Sai Prasuna"
+                 class="profile-img">
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Sai Prasuna</p>
-</footer>
+            <h1>
+                Hi, I'm <span>K. Sai Prasuna</span>
+            </h1>
 
-<script>
-// Smooth scrolling
-document.querySelectorAll("a").forEach(link => {
-  link.addEventListener("click", function(e) {
-    if (this.hash !== "") {
-      e.preventDefault();
-      document.querySelector(this.hash).scrollIntoView({
-        behavior: "smooth"
-      });
-    }
-  });
-});
-</script>
+            <h3>
+                Computer Science Engineering Student | Aspiring Software Developer
+            </h3>
+
+            <p>
+                Motivated Computer Science undergraduate with a strong foundation
+                in Java, Object-Oriented Programming, DBMS, MySQL and full-stack
+                web development.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn btn-primary">
+                    View My Projects
+                </a>
+
+                <a href="Sai_Prasuna_BNP.pdf"
+                   class="btn btn-outline"
+                   target="_blank">
+                    View Resume
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about">
+
+        <div class="section-title">
+            <h2>About Me</h2>
+            <p>Get to know me</p>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-text">
+
+                <p>
+                    I am a Computer Science Engineering undergraduate at
+                    Madanapalle Institute of Technology and Science (MITS),
+                    currently pursuing my B.Tech in Computer Science Engineering.
+                </p>
+
+                <p>
+                    I have a strong foundation in Java, Object-Oriented Programming,
+                    DBMS, MySQL and web development. I enjoy building real-world
+                    applications and solving practical problems using technology.
+                </p>
+
+                <p>
+                    My interests include software development, full-stack
+                    development, cloud technologies, problem-solving and
+                    continuously learning new technologies.
+                </p>
+
+            </div>
+
+            <div class="about-info">
+
+                <div class="info-card">
+                    <h3>Education</h3>
+                    <p>B.Tech - Computer Science Engineering</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>College</h3>
+                    <p>Madanapalle Institute of Technology and Science</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>CGPA</h3>
+                    <p>9.33</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Career Interest</h3>
+                    <p>Software Development & Cloud Technologies</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills">
+
+        <div class="section-title">
+            <h2>Technical Skills</h2>
+            <p>Technologies and concepts I work with</p>
+        </div>
+
+        <div class="skills-container">
+
+            <div class="skill-box">
+                <h3>Programming Languages</h3>
+
+                <div class="skill-tags">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Python - Basics</span>
+                    <span class="skill-tag">C - Basics</span>
+                    <span class="skill-tag">JavaScript</span>
+                </div>
+            </div>
+
+
+            <div class="skill-box">
+                <h3>Frontend</h3>
+
+                <div class="skill-tags">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                </div>
+            </div>
+
+
+            <div class="skill-box">
+                <h3>Backend</h3>
+
+                <div class="skill-tags">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Spring Boot</span>
+                </div>
+            </div>
+
+
+            <div class="skill-box">
+                <h3>Databases</h3>
+
+                <div class="skill-tags">
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                </div>
+            </div>
+
+
+            <div class="skill-box">
+                <h3>Cloud</h3>
+
+                <div class="skill-tags">
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">EC2</span>
+                    <span class="skill-tag">VPC</span>
+                    <span class="skill-tag">IAM</span>
+                    <span class="skill-tag">S3</span>
+                </div>
+            </div>
+
+
+            <div class="skill-box">
+                <h3>Tools & Concepts</h3>
+
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">DBMS</span>
+                    <span class="skill-tag">OOP</span>
+                    <span class="skill-tag">Web Development</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects">
+
+        <div class="section-title">
+            <h2>Projects</h2>
+            <p>Some of the projects I have worked on</p>
+        </div>
+
+        <div class="projects-container">
+
+
+            <!-- SPACENTRA -->
+
+            <div class="project-card">
+
+                <h3>Spacentra</h3>
+
+                <div class="project-tech">
+                    React.js | Java | Spring Boot | MongoDB |
+                    Google Maps API | Gemini API
+                </div>
+
+                <p>
+                    A full-stack coworking space booking platform connecting
+                    startups with space owners.
+                </p>
+
+                <ul>
+                    <li>
+                        Implemented real-time seat-level availability,
+                        direct booking and price negotiation.
+                    </li>
+
+                    <li>
+                        Developed an AI-powered negotiation chatbot using
+                        the Gemini API.
+                    </li>
+
+                    <li>
+                        Integrated Google Maps API for location-based
+                        space discovery.
+                    </li>
+
+                    <li>
+                        Implemented role-based access control with JWT
+                        authentication.
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <!-- CITA -->
+
+            <div class="project-card">
+
+                <h3>CITA 2K26</h3>
+
+                <div class="project-tech">
+                    React.js | Java | Spring Boot | MongoDB |
+                    HTML | CSS | JavaScript
+                </div>
+
+                <p>
+                    A full-stack event management website developed
+                    for a college fest.
+                </p>
+
+                <ul>
+                    <li>
+                        Developed event listing and online registration.
+                    </li>
+
+                    <li>
+                        Managed participation tracking for 100+ registrations.
+                    </li>
+
+                    <li>
+                        Designed a responsive and user-friendly interface.
+                    </li>
+
+                    <li>
+                        Structured backend logic for event and admin data.
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <!-- AWS -->
+
+            <div class="project-card">
+
+                <h3>AWS Cloud Infrastructure</h3>
+
+                <div class="project-tech">
+                    AWS | EC2 | VPC | IAM |
+                    Security Groups | SSH
+                </div>
+
+                <p>
+                    Secure cloud infrastructure project implementing
+                    a Bastion Host architecture.
+                </p>
+
+                <ul>
+                    <li>
+                        Configured a secure AWS VPC environment.
+                    </li>
+
+                    <li>
+                        Worked with EC2 instances and IAM.
+                    </li>
+
+                    <li>
+                        Configured Security Groups and SSH access.
+                    </li>
+
+                    <li>
+                        Implemented secure SSH access to private EC2
+                        instances through a Bastion Host.
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education">
+
+        <div class="section-title">
+            <h2>Education</h2>
+            <p>My academic journey</p>
+        </div>
+
+        <div class="timeline">
+
+            <div class="education-card">
+
+                <h3>B.Tech - Computer Science Engineering</h3>
+
+                <h4>
+                    Madanapalle Institute of Technology and Science
+                </h4>
+
+                <p>2023 - 2027</p>
+
+                <p>
+                    CGPA: <strong>9.33</strong>
+                </p>
+
+            </div>
+
+
+            <div class="education-card">
+
+                <h3>Intermediate</h3>
+
+                <h4>
+                    Sri Siddhartha Junior College
+                </h4>
+
+                <p>2021 - 2023</p>
+
+                <p>
+                    Percentage: <strong>98.3%</strong>
+                </p>
+
+            </div>
+
+
+            <div class="education-card">
+
+                <h3>Matriculation</h3>
+
+                <h4>
+                    A.P. Model School
+                </h4>
+
+                <p>2020 - 2021</p>
+
+                <p>
+                    Percentage: <strong>96%</strong>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+
+    <section id="achievements">
+
+        <div class="section-title">
+            <h2>Achievements & Certifications</h2>
+            <p>Milestones and certifications</p>
+        </div>
+
+        <div class="achievement-grid">
+
+
+            <div class="achievement-card">
+                <h3>🏆 Top 20 - Makeathon 2025</h3>
+
+                <p>
+                    Secured a Top 20 position in Makeathon 2025.
+                </p>
+            </div>
+
+
+            <div class="achievement-card">
+                <h3>🥇 First Prize - GMOCS</h3>
+
+                <p>
+                    Secured First Prize in the Quiz Competition
+                    at the GMOCS National Technical Event.
+                </p>
+            </div>
+
+
+            <div class="achievement-card">
+                <h3>💻 Smart India Hackathon 2024</h3>
+
+                <p>
+                    Participated in Smart India Hackathon 2024
+                    at the Institute Level.
+                </p>
+            </div>
+
+
+            <div class="achievement-card">
+                <h3>🚀 Technoverse Hackathon</h3>
+
+                <p>
+                    Participated in the Technoverse Hackathon
+                    and gained practical problem-solving experience.
+                </p>
+            </div>
+
+
+            <div class="achievement-card">
+                <h3>☁ AWS Cloud Practitioner Essentials</h3>
+
+                <p>
+                    Completed AWS Cloud Practitioner Essentials
+                    course.
+                </p>
+            </div>
+
+
+            <div class="achievement-card">
+                <h3>☁ Oracle AWS Certification</h3>
+
+                <p>
+                    Oracle AWS certification listed in my professional
+                    credentials.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact">
+
+        <div class="section-title">
+            <h2>Let's Connect</h2>
+            <p>Feel free to connect with me</p>
+        </div>
+
+        <div class="contact-container">
+
+            <p>
+                I am interested in software development opportunities,
+                internships, projects and technology-driven challenges.
+            </p>
+
+            <p>
+                📧
+                <strong>
+                    kalumurisaiprasuna2005@gmail.com
+                </strong>
+            </p>
+
+            <div class="contact-links">
+
+                <a href="https://github.com/kalumuriprasuna"
+                   target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/sai-prasuna-kalumuri/"
+                   target="_blank">
+                    LinkedIn
+                </a>
+
+                <a href="https://leetcode.com/u/sai_prasuna/"
+                   target="_blank">
+                    LeetCode
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 K. Sai Prasuna | Portfolio
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        document.querySelectorAll("nav a").forEach(link => {
+
+            link.addEventListener("click", function(event) {
+
+                event.preventDefault();
+
+                const target =
+                    document.querySelector(this.getAttribute("href"));
+
+                if (target) {
+
+                    target.scrollIntoView({
+                        behavior: "smooth"
+                    });
+
+                }
+
+            });
+
+        });
+
+    </script>
 
 </body>
 </html>
